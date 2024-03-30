@@ -11,7 +11,7 @@ describe('User', () => {
   beforeEach(async () => {
     data = {
       dni: '1234567890',
-      "name": "Test"
+      name: 'Test'
     }
     jest.spyOn(console, 'log').mockImplementation(jest.fn())
     jest.spyOn(sequelize, 'log').mockImplementation(jest.fn())
