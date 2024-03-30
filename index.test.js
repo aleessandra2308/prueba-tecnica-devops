@@ -21,7 +21,7 @@ describe('User', () => {
       username: 'root',
       password: '',
       validateOnly: true,
-      models: [path.join(__dirname, '/models')],
+      models: [__dirname + '/models'],
     })
     await mockedSequelize.sync({ force: true })
   })
