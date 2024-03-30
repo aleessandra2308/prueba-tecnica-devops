@@ -68,7 +68,7 @@ jobs:
         with:
           sarif_file: snyk-sca.sarif
           category: sca
-          
+
   eslint:
     if: always()
     runs-on: ubuntu-latest
@@ -86,7 +86,7 @@ jobs:
 
   docker-build:
     if: always()
-    needs: [build-and-test, eslint, synk]
+    needs: [build-and-test, eslint, snyk]
     runs-on: ubuntu-latest
     permissions:
       contents: read
