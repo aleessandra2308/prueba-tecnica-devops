@@ -1,14 +1,9 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true,
+    es2021: true
   },
-  extends: [
-    'standard',
-    'plugin:jest/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: 'standard',
   overrides: [
     {
       env: {
@@ -23,10 +18,9 @@ module.exports = {
     }
   ],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   rules: {
-    'quotes': ['error', 'single', { 'avoidEscape': true }],
   }
 }
